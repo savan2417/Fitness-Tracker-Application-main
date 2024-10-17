@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "checkJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"],
+      "@/*": ["./*"] // Path alias to reference the root of the backend folder
+    },
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "./**/*" // Include all files in the backend folder and its subfolders
+  ],
+  "exclude": [
+    "node_modules", // Exclude node_modules
+    "**/node_modules/*"
+  ]
+}
